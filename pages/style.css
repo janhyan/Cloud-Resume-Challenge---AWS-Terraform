@@ -74,10 +74,9 @@ a:hover {
 }
 
 /* PROFILE */
-
+    
 section {
     padding-top: 4vh;
-    height: 96vh;
     margin: 0;
     box-sizing: border-box;
     min-height: fit-content;
@@ -99,13 +98,15 @@ section {
     display: flex;
     height: 400px;
     margin: auto 0;
+    flex-basis: 40%;
 }
 
 .intro_text {
     flex-wrap: wrap;
     align-self: center;
     text-align: left;
-    font-size: 3rem;
+    font-size: 3vw;
+    flex-basis: 60%;
 }
 
 .intro_text_description {
@@ -115,5 +116,11 @@ section {
 
 .intro_img {
     flex-grow: auto;
+}
+
+/* ABOUT ME */
+
+#intro {
+    overflow:auto;
 }
 
