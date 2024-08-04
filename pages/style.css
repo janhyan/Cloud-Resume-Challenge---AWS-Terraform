@@ -122,24 +122,34 @@ section {
 
 #about_me {
     display: flex;
-    flex-direction: row;
+    flex-direction: row;   
 }
 
 .about_me_img_container {
-    flex-basis: 30%;
+    flex-basis: 50%;
+    position: relative;
+}
+
+.about_me_img_container .about_me_img {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
 }
 
 .about_me_title {
-    font-size: 5vw;
+    font-size: 2rem;
+    margin-bottom: 2rem ;
 }
 
 .about_me_quote {
     font-style: italic;
-    font-size: 3vw;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .about_me_description {
-    font-size: 1.5vw;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
 }
 
 /* LOGOS */
@@ -149,6 +159,11 @@ section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills_logos p {
+    text-align: center;
 }
 
 .aws {
@@ -272,3 +287,41 @@ section {
     vertical-align: -0.125em;
     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' d='M11.379 23.613h9.508a2 2 0 0 1 2 2v18.036H11.379a2 2 0 0 1-2-2V25.613a2 2 0 0 1 2-2m15.58-9.44V6.649a2 2 0 0 1 2-2h9.508a2 2 0 0 1 2 2v35a2 2 0 0 1-2 2h-6.79'/%3E%3Cpath fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' d='M18.169 23.613v-7.44a2 2 0 0 1 2-2h9.508a2 2 0 0 1 2 2v27.476h-8.79'/%3E%3C/svg%3E");
   }
+
+
+/* EXPERIENCES */
+.experiences-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#experiences .img {
+    flex-basis: 20%;
+    position: relative;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+}
+
+#experiences .image {
+    width: 90%;
+    display: block;
+    margin: 10px auto;
+
+}
+
+#experiences .experiences-container .finastra_container {
+    display: flex;
+    background: rgb(57,48,74);
+    background: linear-gradient(135deg, rgba(57,48,74,1) 100%, rgba(49,43,65,1) 33%, rgba(13,13,19,1) 0%);
+    border-radius: 30px;
+    
+}
+
+.finastra-description-container {
+    flex-wrap: wrap;
+}
