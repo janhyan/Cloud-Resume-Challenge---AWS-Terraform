@@ -291,37 +291,52 @@ section {
 
 /* EXPERIENCES */
 .experiences-container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-auto-rows: minmax(200px, max-content);
+    grid-template-columns: 95vw;
+    gap: 20px;
 }
 
 #experiences .img {
-    flex-basis: 20%;
     position: relative;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
-    background-color: black;
+    background-color: white;
     margin: 0;
     padding: 0;
     border: 0;
-    
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 #experiences .image {
-    width: 90%;
-    display: block;
-    margin: 10px auto;
-
+    width: 80%;
 }
 
-#experiences .experiences-container .finastra_container {
-    display: flex;
+#experiences .experiences-container .finastra-container, .sentinel-container, .shelleco-container, .pcb-container {
+    display: grid;
+    grid-template-columns: 20vw 1fr;
     background: rgb(57,48,74);
     background: linear-gradient(135deg, rgba(57,48,74,1) 100%, rgba(49,43,65,1) 33%, rgba(13,13,19,1) 0%);
     border-radius: 30px;
-    
+    padding: 0;
 }
 
-.finastra-description-container {
+/* #experiences .experiences-container .sentinel_container {
+    display: grid;
+    grid-template-columns: 20vw 1fr;
+    background: rgb(57,48,74);
+    background: linear-gradient(135deg, rgba(57,48,74,1) 100%, rgba(49,43,65,1) 33%, rgba(13,13,19,1) 0%);
+    border-radius: 30px;
+    padding: 0;
+} */
+
+.description-container {
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    padding: 20px 40px;
 }
