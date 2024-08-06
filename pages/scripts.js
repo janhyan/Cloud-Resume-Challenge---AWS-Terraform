@@ -2,7 +2,7 @@
 
 const github = document.querySelector('.github')
 github.onclick = function () {
-    window.open('https://www.github.com/badruxx/', "_blank")
+    window.open('https://www.github.com/janhyan/', "_blank")
 }
 
 const linkedin = document.querySelector('.linkedin')

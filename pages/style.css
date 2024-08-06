@@ -17,6 +17,9 @@ html {
     background: linear-gradient(135deg, rgba(57,48,74,1) 0%, rgba(49,43,65,1) 33%, rgba(13,13,19,1) 100%);
 }
 
+#about, #experiences, #projects, #contact {
+    padding: 0 10vw;
+}
 
 /* DESKTOP NAV */
 
@@ -55,7 +58,7 @@ a {
     text-decoration-color: black;
 }
 
-a.linkedin_nav {
+a.linkedin-nav {
     color: #5E7988;
 }
 
@@ -94,14 +97,14 @@ section {
     flex-direction: row-reverse;
 }
 
-.intro_img_container {
+.intro-img-container {
     display: flex;
     height: 400px;
     margin: auto 0;
     flex-basis: 40%;
 }
 
-.intro_text {
+.intro-text {
     flex-wrap: wrap;
     align-self: center;
     text-align: left;
@@ -109,52 +112,80 @@ section {
     flex-basis: 60%;
 }
 
-.intro_text_description {
+.intro-text-description {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
 }
 
-.intro_img {
+.intro-img {
     flex-grow: auto;
 }
 
 /* ABOUT ME */
 
-#about_me {
-    display: flex;
-    flex-direction: row;   
+#about {
+    /* display: flex;
+    flex-direction: row;    */
 }
 
-.about_me_img_container {
-    flex-basis: 50%;
-    position: relative;
+.about-me-container {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 3fr;
 }
 
-.about_me_img_container .about_me_img {
+.about-me-img-container {
+    /* flex-basis: 50%;
+    position: relative; */
+}
+
+.about-me-img-container .about-me-img {
     width: 70%;
     display: block;
     margin: 0 auto;
 }
 
-.about_me_title {
+.about-me-title {
     font-size: 2rem;
     margin-bottom: 2rem ;
 }
 
-.about_me_quote {
+.about-me-quote {
     font-style: italic;
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
-.about_me_description {
+.about-me-description {
     font-size: 1.3rem;
     margin-bottom: 2rem;
 }
 
+.skills-container {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
 /* LOGOS */
 
-.skills_logos {
+.certs-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style-type: none;
+}
+
+.certs-logos img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    padding: 3px;
+    display: block;
+    text-align: center;
+    
+}
+
+
+.skills-logos {
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -162,7 +193,7 @@ section {
     justify-content: center;
 }
 
-.skills_logos p {
+.skills-logos p {
     text-align: center;
 }
 
@@ -293,7 +324,6 @@ section {
 .experiences-container {
     display: grid;
     grid-auto-rows: minmax(200px, max-content);
-    grid-template-columns: 95vw;
     gap: 20px;
 }
 
@@ -314,6 +344,7 @@ section {
 
 #experiences .image {
     width: 80%;
+    padding: 20px;
 }
 
 #experiences .experiences-container .finastra-container, .sentinel-container, .shelleco-container, .pcb-container {
@@ -325,18 +356,7 @@ section {
     padding: 0;
 }
 
-/* #experiences .experiences-container .sentinel_container {
-    display: grid;
-    grid-template-columns: 20vw 1fr;
-    background: rgb(57,48,74);
-    background: linear-gradient(135deg, rgba(57,48,74,1) 100%, rgba(49,43,65,1) 33%, rgba(13,13,19,1) 0%);
-    border-radius: 30px;
-    padding: 0;
-} */
 
 .description-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 20px 40px;
+    padding: 20px 0 20px 40px;
 }
