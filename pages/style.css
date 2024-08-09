@@ -18,7 +18,7 @@ html {
 }
 
 #about, #experiences, #projects, #contact {
-    padding: 0 10vw;
+    padding: 4vw 10vw 0 10vw;
 }
 
 /* DESKTOP NAV */
@@ -123,11 +123,6 @@ section {
 
 /* ABOUT ME */
 
-#about {
-    /* display: flex;
-    flex-direction: row;    */
-}
-
 .about-me-container {
     display: grid;
     grid-template: 1fr .8fr / 1fr 3fr;
@@ -138,7 +133,6 @@ section {
     width: max(300px, 20vw);
     display: block;
     margin: 0 auto;
-    position: 
 }
 
 .about-me-title {
@@ -378,22 +372,82 @@ section {
 
 .projects-container {
     display: flex;
-    align-content: space-around;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
+    height: 100%;
+}
+
+.projects-img-container {
+    height: 75%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+}
+
+.projects-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    padding: 0;
 }
 
 .projects {
     border: 2px solid rgb(57,48,74);
     border-radius: 20px;
+    flex: 1 0 0;
+    padding: 10px;
+}
+
+.text {
+    text-align: center;
 }
 
 /* CONTACT ME */
 
 .contact-container {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.contact-container p{
+    font-size: 2rem;
+}
+
+.contact-message {
+    font-size: 3rem;
+    font-family: 'Poppins';
+}
+
+.contact {
+    padding: 5vh 0;
+    color: azure;
 }
 
 .contact-container button{
-    width: 100px;
+    width: 150px;
+    height: 80px;
+    background-color: transparent;
+    color: azure;
+    border: 1px solid azure;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#contact {
+    height: 60vh;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
