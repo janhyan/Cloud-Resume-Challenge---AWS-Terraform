@@ -13,12 +13,12 @@ body {
 
 html {
   scroll-behavior: smooth;
-  background: rgb(57, 48, 74);
+  background: #39304a;
   background: linear-gradient(
     135deg,
     rgba(57, 48, 74, 1) 0%,
     rgba(49, 43, 65, 1) 33%,
-    rgba(13, 13, 19, 1) 100%
+    #0d0d13 100%
   );
 }
 
@@ -32,7 +32,7 @@ html {
 /* DESKTOP NAV */
 
 .logo {
-  color: azure;
+  color: #F8F1FF;
   font-size: 2rem;
 }
 
@@ -41,7 +41,7 @@ html {
 }
 
 #desktop-nav span {
-    color: #5e7988;
+    color: #1B998B;
     padding: 0;
 }
 
@@ -71,11 +71,11 @@ a {
 }
 
 a.linkedin-nav {
-  color: #5e7988;
+  color: #1B998B;
 }
 
 a:hover {
-  color: #5e7988;
+  color: #1B998B;
   text-decoration: underline;
   text-underline-offset: 1rem;
 }
@@ -83,7 +83,7 @@ a:hover {
 /* HELLO */
 
 .hello {
-  color: azure;
+  color: #F8F1FF;
   display: flex;
   flex-direction: column;
   opacity: 50%;
@@ -107,7 +107,7 @@ section {
   padding-top: 4vh;
   margin: 0;
   box-sizing: border-box;
-  color: azure;
+  color: #F8F1FF;
 }
 
 .section-container {
@@ -173,7 +173,7 @@ section {
     font-family: 'DM Mono';
     font-weight: 100;
     font-size: 1.5rem;
-    color: #5e7988;
+    color: #1B998B;
 }
 
 .about-me-quote {
@@ -483,15 +483,15 @@ h3 {
 
 .contact {
   padding: 5vh 0;
-  color: azure;
+  color: #F8F1FF;
 }
 
 button {
   width: 150px;
   height: 80px;
   background-color: transparent;
-  color: #5e7988;
-  border: 1px solid #5e7988;
+  color: #1B998B;
+  border: 1px solid #1B998B;
   border-radius: 10px;
   cursor: pointer;
   text-decoration: none;
@@ -500,7 +500,7 @@ button {
 }
 
 button:hover {
-    background-color: #5e79884f;
+    background-color: #1B998B4f;
 }
 
 #contact {
