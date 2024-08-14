@@ -82,11 +82,22 @@ a:hover {
 
 /* HELLO */
 
-.hello {
+.info {
   color: #F8F1FF;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   opacity: 50%;
+  justify-content: space-between;
+}
+
+.visitor-counter h1 {
+  font-family: 'DM Mono';
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+
+.visitor-counter span {
+  color: #1B998B;
 }
 
 .hello-text {

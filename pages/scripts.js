@@ -14,3 +14,8 @@ const email = document.querySelector('.email')
 email.onclick = function () {
     window.location = "mailto:hyanjansuamina@gmail.com"
 }
+
+/* VISITOR COUNTER */
+
+const visitorCounter = document.querySelector('.counter')
+visitorCounter.innerHTML = '20';
