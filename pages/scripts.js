@@ -17,5 +17,23 @@ email.onclick = function () {
 
 /* VISITOR COUNTER */
 
+const apiUrl = ''
 const visitorCounter = document.querySelector('.counter')
+
+
+
 visitorCounter.innerHTML = '20';
+
+fetch(apiUrl)
+    .then(Response => {
+        if (!Response.ok) {
+            throw new Error('Network response was not okay.')
+        }
+        return Response.json();
+    })
+    .then(data => {
+        console.log(data);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
