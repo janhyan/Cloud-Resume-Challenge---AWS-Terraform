@@ -22,7 +22,6 @@ const visitorCounter = document.querySelector('.counter')
 
 
 
-visitorCounter.innerHTML = '20';
 
 fetch(apiUrl)
     .then(Response => {
@@ -32,7 +31,7 @@ fetch(apiUrl)
         return Response.json();
     })
     .then(data => {
-        console.log(data);
+        visitorCounter.innerHTML = data.count;
     })
     .catch(error => {
         console.error('Error:', error);
