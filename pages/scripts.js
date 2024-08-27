@@ -17,7 +17,7 @@ email.onclick = function () {
 
 /* VISITOR COUNTER */
 
-const apiUrl = ''
+const apiUrl = 'https://airtk17j7h.execute-api.ap-northeast-1.amazonaws.com/dev'
 const visitorCounter = document.querySelector('.counter')
 
 
