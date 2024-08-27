@@ -13,7 +13,7 @@ def lambda_handler(event, context):
     # Get count from table
     response = table.get_item(Key={'id': Decimal(0)})
     if 'Item' in response:
-        visit_count = response['Item']['count']
+        visit_count = int(response['Item']['count'])
         
     # Increment current count
     visit_count += 1
@@ -22,4 +22,5 @@ def lambda_handler(event, context):
     print(visit_count)
     return {
         'statusCode': 200,
-        'count': visit_count}
+        'body': json.dumps({'count': visit_count})
+    }
