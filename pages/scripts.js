@@ -15,6 +15,10 @@ email.onclick = function () {
     window.location = "mailto:hyanjansuamina@gmail.com"
 }
 
+function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
+
 /* VISITOR COUNTER */
 
 const apiUrl = 'https://airtk17j7h.execute-api.ap-northeast-1.amazonaws.com/dev'
