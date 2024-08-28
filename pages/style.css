@@ -9,7 +9,6 @@
 
 body {
   font-family: 'Roboto Condensed';
-  position: ;
 }
 
 html {
@@ -71,9 +70,9 @@ html {
 .mobile-menu {
   display: none;
   position: absolute;
-  top: 50px;
+  top: 60px;
   right: 0px;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   list-style: none;
   background: #39304a;
@@ -83,6 +82,7 @@ html {
     rgba(49, 43, 65, 1) 5%,
     #0d0d13 100%
   );
+  z-index: 2;
 }
 
 .mobile-menu span {
@@ -97,10 +97,6 @@ html {
 
 
 @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
-
   .nav-div {
     display: none;
   }
@@ -118,6 +114,116 @@ html {
     color: F8F1FF;
     font-size: 5vw;
   }
+
+  .info {
+    font-size: 2vw;
+  }
+
+  #intro .intro-text {
+    width: 100%;
+    height: 60%;
+    font-size: 4vh;
+    letter-spacing: -1px;
+    
+  }
+
+  #intro .intro-img-container {
+    text-align: center;
+  }
+
+  #intro .intro-img {
+    position: relative;
+    justify-content: center;
+    width: 70%;
+  }
+
+  .resume-button {
+    width: 30%;
+    height: 12%;
+    margin-top: 10px;
+  }
+
+  #about,
+  #experiences,
+  #projects,
+  #contact {
+    padding: 4vw 0 0 0;
+  }
+
+  .about-me-img-container {
+    order: 2;
+  }
+
+  .about-me-container .about-me-desc {
+    order: 1;
+    width: 100%;
+  }
+
+  .about-me-container .about-me-img-container .about-me-img {
+    height: 20vh;
+    position: relative;
+    width: max(200px, 18vw);
+    margin: 0 auto;
+  }
+  
+  .about-me-container .about-me-img-container .about-me-img .about-me-img-overlay {
+    height: 20vh;
+    background-color: #1b998a85;
+  }
+  
+  .about-me-container .about-me-img-container .about-me-img .about-me-img-bg {
+    width: max(200px, 18vw);
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 0;
+    height:20vh;
+    background-size: 100%;
+    z-index: 1;
+    position: absolute;
+  }
+  
+  .about-me-img-container .about-me-img .about-me-img-overlay {
+    width: max(200px, 18vw);
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 0;
+    height:20vh;
+    background-color: #1b998a83;
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+  }
+  
+  .about-me-img-container .about-me-img .about-me-img-overlay:hover {
+    background-color: transparent;
+  }
+  
+  .about-me-container .about-me-img-container .about-me-img .about-me-img-border {
+    width: max(200px, 18vw);
+    border-radius: 10px;
+    padding: 0;
+    height:20vh;
+    border: 2px solid #1B998B;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    z-index: 0;
+  }
+
+  .skills-container {
+    order: 3;
+  }
+
+  .certs-logos {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+
+  .certs-logos img {
+    width: 25vw;
+  }
+
 }
 /* DESKTOP NAV */
 
@@ -178,12 +284,12 @@ a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-size: 1vh;
 }
 
 .visitor-counter h1 {
   font-family: 'DM Mono';
   font-weight: 100;
-  font-size: 1.5rem;
 }
 
 .visitor-counter span {
@@ -193,7 +299,6 @@ a:hover {
 .hello-text {
     font-family: 'DM Mono';
     font-weight: 100;
-    font-size: 1.5rem;
 }
 
 
@@ -211,28 +316,20 @@ section {
   color: #F8F1FF;
 }
 
-.section-container {
-  display: flex;
-}
-
 #intro {
-  display: grid;
-  grid-template-columns: 50vw 1fr;
+  display: flex;
   height: 88vh;
   align-items: center;
-}
-
-.intro-img-container {
-  display: flex;
-  justify-content: center;
-  flex: 1 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .intro-text {
   flex-wrap: wrap;
   align-self: center;
   text-align: left;
-  font-size: 4rem;
+  font-size: 3.3vw;
+  width: 55%;
   line-height: 1.5em;
   font-weight: 400;
   letter-spacing: -4px;
@@ -244,22 +341,63 @@ section {
 }
 
 .intro-img {
-  width: 85%;
-  height: 85%;
+  width: 40vw;
 }
 
 /* ABOUT ME */
 
 .about-me-container {
-  display: grid;
-  grid-template: 1fr 0.8fr / 1fr 3fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 70px;
+  justify-content: center;
 }
 
 .about-me-img-container .about-me-img {
-  width: max(300px, 20vw);
-  display: block;
+  position: relative;
+  width: max(200px, 18vw);
   margin: 0 auto;
+}
+
+.about-me-img-container .about-me-img .about-me-img-bg {
+  width: max(200px, 18vw);
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 0;
+  background-image: url("assets/intro-img.png");
+  background-position: center;
+  height:30vh;
+  background-size: 100%;
+  z-index: 1;
+  position: absolute;
+}
+
+.about-me-img-container .about-me-img .about-me-img-overlay {
+  width: max(200px, 18vw);
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 0;
+  height:30vh;
+  background-color: #1b998a83;
+  position: absolute;
+  top: 0px;
+  z-index: 2;
+}
+
+.about-me-img-container .about-me-img .about-me-img-overlay:hover {
+  background-color: transparent;
+}
+
+.about-me-img-container .about-me-img .about-me-img-border {
+  width: max(200px, 18vw);
+  border-radius: 10px;
+  padding: 0;
+  height:30vh;
+  border: 2px solid #1B998B;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  z-index: 0;
 }
 
 .title {
@@ -279,24 +417,33 @@ section {
 
 .about-me-quote {
   font-style: italic;
-  font-size: 1.5rem;
+  font-size: 3vh;
   margin-bottom: 1rem;
 }
 
+.about-me-desc {
+  width: 60%;
+}
+
 .about-me-description {
-  font-size: 1.3rem;
+  text-wrap: wrap;
+  font-size: 2.8vh;
   margin-bottom: 2rem;
 }
 
 .skills-container {
   text-align: center;
-  grid-column-start: 1;
-  grid-column-end: 3;
+}
+
+.skills-container ul {
+  display: flex;
+  gap: 20px;
 }
 
 .cert-title {
   position: relative;
-  top: 5%;
+  top: 4%;
+  font-size: 3vh;
 }
 
 .skills-title {
@@ -306,8 +453,7 @@ section {
 /* LOGOS */
 
 .certs-logos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
   list-style-type: none;
   border: 2px solid rgb(57, 48, 74);
   border-radius: 20px;
@@ -458,6 +604,14 @@ section {
   height: 5rem;
   vertical-align: -0.125em;
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' d='M11.379 23.613h9.508a2 2 0 0 1 2 2v18.036H11.379a2 2 0 0 1-2-2V25.613a2 2 0 0 1 2-2m15.58-9.44V6.649a2 2 0 0 1 2-2h9.508a2 2 0 0 1 2 2v35a2 2 0 0 1-2 2h-6.79'/%3E%3Cpath fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' d='M18.169 23.613v-7.44a2 2 0 0 1 2-2h9.508a2 2 0 0 1 2 2v27.476h-8.79'/%3E%3C/svg%3E");
+}
+
+.terraform {
+  display: inline-block;
+  width: 5em;
+  height: 5em;
+  vertical-align: -0.125em;
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Cpath fill='white' fill-rule='evenodd' d='M46.324 26.082L77.941 44.5v36.836L46.324 62.918zM81.41 44.5v36.836l31.633-18.418V26.082zM11.242 5.523V42.36L42.86 60.777V23.941zm66.699 79.852L46.324 66.957v36.824L77.941 122.2zm0 0'/%3E%3C/svg%3E");
 }
 
 /* EXPERIENCES */
