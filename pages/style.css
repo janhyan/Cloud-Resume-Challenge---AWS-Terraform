@@ -35,14 +35,16 @@ html {
   margin: auto 0;
   display: none;
   cursor: pointer;
+  padding: 0;
 }
 
 #hamburger-icon div {
-  width: 35px;
+  width: 20px;
   height: 3px;
   background-color: white;
   margin: 6px 0;
   transition: 0.4s;
+  justify-content: end;
 }
 
 .open .bar1 {
@@ -70,10 +72,17 @@ html {
   display: none;
   position: absolute;
   top: 50px;
-  left: 0;
-  height: calc(100vh - 50px);
+  right: 0px;
+  height: 90vh;
   width: 100%;
   list-style: none;
+  background: #39304a;
+  background: linear-gradient(
+    0deg,
+    rgba(57, 48, 74, 1) 0%,
+    rgba(49, 43, 65, 1) 5%,
+    #0d0d13 100%
+  );
 }
 
 .mobile-menu span {
@@ -82,8 +91,10 @@ html {
 }
 
 .mobile-menu li {
-  margin-bottom: 10px;
+  margin-bottom: 40px;
+  margin-top: 10px;
 }
+
 
 @media only screen and (max-width: 600px) {
   body {
@@ -97,9 +108,15 @@ html {
   #hamburger-icon {
     display: block;
   }
+
   header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #desktop-nav .logo {
+    color: F8F1FF;
+    font-size: 5vw;
   }
 }
 /* DESKTOP NAV */
@@ -107,6 +124,7 @@ html {
 .logo {
   color: #F8F1FF;
   font-size: 2rem;
+  padding-left: 0;
 }
 
 .logo:hover {
@@ -156,10 +174,9 @@ a:hover {
 /* HELLO */
 
 .info {
-  color: #F8F1FF;
+  color: #f8f1ff70;
   display: flex;
   flex-direction: row;
-  opacity: 50%;
   justify-content: space-between;
 }
 
