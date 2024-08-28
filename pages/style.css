@@ -709,10 +709,8 @@ h3 {
 }
 
 .projects-img-container {
-  height: 75%;
+  height: 50vh;
   overflow: hidden;
-  justify-content: center;
-  align-items: center;
   align-content: center;
   padding: 10px;
 }
@@ -727,8 +725,9 @@ h3 {
 .projects {
   border: 2px solid rgb(57, 48, 74);
   border-radius: 20px;
-  flex: 1 0 0;
   padding: 10px;
+  height: 100%;
+  font-size: 1.5rem;
 }
 
 .text {
@@ -777,7 +776,8 @@ button:hover {
 }
 
 #contact {
-  height: 60vh;
+  height: 100%;
+  padding-bottom: 10vh;
 }
 
 .buttons {
@@ -785,4 +785,4 @@ button:hover {
   display: flex;
   justify-content: center;
   gap: 20px;
-}
+}  */
