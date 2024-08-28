@@ -15,6 +15,16 @@ email.onclick = function () {
     window.location = "mailto:hyanjansuamina@gmail.com"
 }
 
+const kaway = document.querySelector('.kaway-github')
+kaway.onclick = function () {
+    window.open("https://github.com/janhyan/KawayFSL", '_blank')
+}
+
+const resume = document.querySelector('.resume-github')
+resume.onclick = function () {
+    window.open("https://github.com/janhyan/Cloud-Resume-Challenge---AWS-Terraform", '_blank')
+}
+
 function toggleMobileMenu(menu) {
     menu.classList.toggle('open');
 }
@@ -40,3 +50,13 @@ fetch(apiUrl)
     .catch(error => {
         console.error('Error:', error);
     });
+
+// Typing Animation
+var typed = new Typed('#intro-text-description', {
+    strings: ['Cloud Engineering', 'DevOps', 'Cybersecurity', 'PCB Design', 'Radio Comms'],
+    typeSpeed: 100,
+    backSpeed: 50,
+    loop: true,
+    autoInsertCss: true,
+
+})
