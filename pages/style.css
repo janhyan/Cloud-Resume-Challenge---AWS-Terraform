@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed";
 }
 
 html {
@@ -86,7 +86,7 @@ html {
 }
 
 .mobile-menu span {
-  color: #1B998B;
+  color: #1b998b;
   padding: 0;
 }
 
@@ -94,7 +94,6 @@ html {
   margin-bottom: 40px;
   margin-top: 10px;
 }
-
 
 @media only screen and (max-width: 600px) {
   .nav-div {
@@ -124,7 +123,6 @@ html {
     height: 60%;
     font-size: 4vh;
     letter-spacing: -1px;
-    
   }
 
   #intro .intro-img-container {
@@ -165,45 +163,51 @@ html {
     width: max(200px, 18vw);
     margin: 0 auto;
   }
-  
-  .about-me-container .about-me-img-container .about-me-img .about-me-img-overlay {
+
+  .about-me-container
+    .about-me-img-container
+    .about-me-img
+    .about-me-img-overlay {
     height: 20vh;
     background-color: #1b998a85;
   }
-  
+
   .about-me-container .about-me-img-container .about-me-img .about-me-img-bg {
     width: max(200px, 18vw);
     margin: 0 auto;
     border-radius: 10px;
     padding: 0;
-    height:20vh;
+    height: 20vh;
     background-size: 100%;
     z-index: 1;
     position: absolute;
   }
-  
+
   .about-me-img-container .about-me-img .about-me-img-overlay {
     width: max(200px, 18vw);
     margin: 0 auto;
     border-radius: 10px;
     padding: 0;
-    height:20vh;
+    height: 20vh;
     background-color: #1b998a83;
     position: absolute;
     top: 0px;
     z-index: 2;
   }
-  
+
   .about-me-img-container .about-me-img .about-me-img-overlay:hover {
     background-color: transparent;
   }
-  
-  .about-me-container .about-me-img-container .about-me-img .about-me-img-border {
+
+  .about-me-container
+    .about-me-img-container
+    .about-me-img
+    .about-me-img-border {
     width: max(200px, 18vw);
     border-radius: 10px;
     padding: 0;
-    height:20vh;
-    border: 2px solid #1B998B;
+    height: 20vh;
+    border: 2px solid #1b998b;
     position: absolute;
     top: 15px;
     left: 20px;
@@ -224,11 +228,26 @@ html {
     width: 25vw;
   }
 
+  #experiences .experiences-container .finastra-container,
+  #experiences .experiences-container .sentinel-container,
+  #experiences .experiences-container .shelleco-container,
+  #experiences .experiences-container .pcb-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  
+
+  #experiences .experiences-container .img.container {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 30px;
+  }
+
 }
 /* DESKTOP NAV */
 
 .logo {
-  color: #F8F1FF;
+  color: #f8f1ff;
   font-size: 2rem;
   padding-left: 0;
 }
@@ -238,8 +257,8 @@ html {
 }
 
 #desktop-nav span {
-    color: #1B998B;
-    padding: 0;
+  color: #1b998b;
+  padding: 0;
 }
 
 nav,
@@ -268,11 +287,11 @@ a {
 }
 
 a.linkedin-nav {
-  color: #1B998B;
+  color: #1b998b;
 }
 
 a:hover {
-  color: #1B998B;
+  color: #1b998b;
   text-decoration: underline;
   text-underline-offset: 1rem;
 }
@@ -288,32 +307,31 @@ a:hover {
 }
 
 .visitor-counter h1 {
-  font-family: 'DM Mono';
+  font-family: "DM Mono";
   font-weight: 100;
 }
 
 .visitor-counter span {
-  color: #1B998B;
+  color: #1b998b;
 }
 
 .hello-text {
-    font-family: 'DM Mono';
-    font-weight: 100;
+  font-family: "DM Mono";
+  font-weight: 100;
 }
-
 
 /* PROFILE */
 
 h1 {
-    font-family: 'Manrope';
-    font-weight: 500;
+  font-family: "Manrope";
+  font-weight: 500;
 }
 
 section {
   padding-top: 4vh;
   margin: 0;
   box-sizing: border-box;
-  color: #F8F1FF;
+  color: #f8f1ff;
 }
 
 #intro {
@@ -337,7 +355,7 @@ section {
 }
 
 .intro-text h1 {
-    padding: 0;
+  padding: 0;
 }
 
 .intro-img {
@@ -366,7 +384,7 @@ section {
   padding: 0;
   background-image: url("assets/intro-img.png");
   background-position: center;
-  height:30vh;
+  height: 30vh;
   background-size: 100%;
   z-index: 1;
   position: absolute;
@@ -377,7 +395,7 @@ section {
   margin: 0 auto;
   border-radius: 10px;
   padding: 0;
-  height:30vh;
+  height: 30vh;
   background-color: #1b998a83;
   position: absolute;
   top: 0px;
@@ -392,8 +410,8 @@ section {
   width: max(200px, 18vw);
   border-radius: 10px;
   padding: 0;
-  height:30vh;
-  border: 2px solid #1B998B;
+  height: 30vh;
+  border: 2px solid #1b998b;
   position: absolute;
   top: 15px;
   left: 20px;
@@ -403,16 +421,16 @@ section {
 .title {
   font-size: 2rem;
   margin-bottom: 2rem;
-  font-family: 'Manrope';
+  font-family: "Manrope";
   font-weight: 800;
   margin-bottom: 20px;
 }
 
-.title span{
-    font-family: 'DM Mono';
-    font-weight: 100;
-    font-size: 1.5rem;
-    color: #1B998B;
+.title span {
+  font-family: "DM Mono";
+  font-weight: 100;
+  font-size: 1.5rem;
+  color: #1b998b;
 }
 
 .about-me-quote {
@@ -641,7 +659,7 @@ section {
   padding: 20px;
 }
 
-#experiences .experiences-container .finastra-container,
+.experiences-container .finastra-container,
 .sentinel-container,
 .shelleco-container,
 .pcb-container {
@@ -663,21 +681,21 @@ section {
 }
 
 h2 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 h3 {
-    font-size: 1.3rem; 
-    line-height: 1.7rem;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
 }
 
 #experiences ul {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
 #experiences li {
-    font-size: 1rem;
-    line-height: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 /* PROJECTS */
@@ -738,15 +756,15 @@ h3 {
 
 .contact {
   padding: 5vh 0;
-  color: #F8F1FF;
+  color: #f8f1ff;
 }
 
 button {
   width: 150px;
   height: 80px;
   background-color: transparent;
-  color: #1B998B;
-  border: 1px solid #1B998B;
+  color: #1b998b;
+  border: 1px solid #1b998b;
   border-radius: 10px;
   cursor: pointer;
   text-decoration: none;
@@ -755,7 +773,7 @@ button {
 }
 
 button:hover {
-    background-color: #1B998B4f;
+  background-color: #1b998b4f;
 }
 
 #contact {
