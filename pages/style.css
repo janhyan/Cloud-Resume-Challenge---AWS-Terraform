@@ -95,7 +95,7 @@ html {
   margin-top: 10px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
   .nav-div {
     display: none;
   }
@@ -118,6 +118,10 @@ html {
     font-size: 2vw;
   }
 
+  body #intro {
+    height: 100%;
+  }
+
   #intro .intro-text {
     width: 100%;
     height: 60%;
@@ -127,18 +131,23 @@ html {
 
   #intro .intro-img-container {
     text-align: center;
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
   }
 
   #intro .intro-img {
     position: relative;
     justify-content: center;
-    width: 70%;
+    max-width: 100%;
+    width: auto;
   }
 
   .resume-button {
     width: 30%;
-    height: 12%;
+    height: 8vh;
     margin-top: 20px;
+    font-size: 2vh;
   }
 
   #about,
@@ -148,19 +157,13 @@ html {
     padding: 4vw 0 0 0;
   }
 
-  .about-me-img-container {
-    order: 2;
-  }
-
   .about-me-container .about-me-desc {
-    order: 1;
     width: 100%;
   }
 
   .about-me-container .about-me-img-container .about-me-img {
-    height: 20vh;
+    height: 25vh;
     position: relative;
-    width: max(200px, 18vw);
     margin: 0 auto;
   }
 
@@ -168,8 +171,9 @@ html {
     .about-me-img-container
     .about-me-img
     .about-me-img-overlay {
-    height: 20vh;
+    height: max(200px, 18vw);
     background-color: #1b998a85;
+    width: max(200px, 18vw);
   }
 
   .about-me-container .about-me-img-container .about-me-img .about-me-img-bg {
@@ -177,22 +181,10 @@ html {
     margin: 0 auto;
     border-radius: 10px;
     padding: 0;
-    height: 20vh;
+    height: max(200px, 18vw);
     background-size: 100%;
     z-index: 1;
     position: absolute;
-  }
-
-  .about-me-img-container .about-me-img .about-me-img-overlay {
-    width: max(200px, 18vw);
-    margin: 0 auto;
-    border-radius: 10px;
-    padding: 0;
-    height: 20vh;
-    background-color: #1b998a83;
-    position: absolute;
-    top: 0px;
-    z-index: 2;
   }
 
   .about-me-img-container .about-me-img .about-me-img-overlay:hover {
@@ -206,7 +198,7 @@ html {
     width: max(200px, 18vw);
     border-radius: 10px;
     padding: 0;
-    height: 20vh;
+    height: max(200px, 18vw);
     border: 2px solid #1b998b;
     position: absolute;
     top: 15px;
@@ -214,9 +206,6 @@ html {
     z-index: 0;
   }
 
-  .skills-container {
-    order: 3;
-  }
 
   .certs-logos {
     flex-wrap: wrap;
@@ -362,8 +351,12 @@ section {
   padding-bottom: 10px;
 }
 
-.intro-img {
+.intro-img-container {
   width: 40vw;
+}
+
+.intro-img {
+  width: 100%;
 }
 
 /* ABOUT ME */
@@ -388,7 +381,7 @@ section {
   padding: 0;
   background-image: url("assets/intro-img.png");
   background-position: center;
-  height: 250px;
+  height:  max(250px, 18vw);
   background-size: 100%;
   z-index: 1;
   position: absolute;
@@ -399,7 +392,7 @@ section {
   margin: 0 auto;
   border-radius: 10px;
   padding: 0;
-  height: 250px;
+  height:  max(250px, 18vw);
   background-color: #1b998a83;
   position: absolute;
   top: 0px;
@@ -414,7 +407,7 @@ section {
   width: max(250px, 18vw);
   border-radius: 10px;
   padding: 0;
-  height: 250px;
+  height:  max(250px, 18vw);
   border: 2px solid #1b998b;
   position: absolute;
   top: 15px;
